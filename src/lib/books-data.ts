@@ -1,0 +1,163 @@
+export type BookCondition = 'Like New' | 'Very Good' | 'Good' | 'Acceptable';
+
+export interface Book {
+  id: string;
+  title: string;
+  author: string;
+  price: number;
+  originalPrice: number;
+  condition: BookCondition;
+  genre: string;
+  cover: string;
+  year: number;
+  description: string;
+}
+
+export const genres = ['All', 'Fiction', 'Non-Fiction', 'Mystery', 'Science', 'History', 'Philosophy', 'Poetry', 'Fantasy'] as const;
+
+export const books: Book[] = [
+  {
+    id: '1',
+    title: 'One Hundred Years of Solitude',
+    author: 'Gabriel García Márquez',
+    price: 6.99,
+    originalPrice: 16.99,
+    condition: 'Very Good',
+    genre: 'Fiction',
+    cover: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=300&h=450&fit=crop',
+    year: 1967,
+    description: 'A masterpiece of magical realism.',
+  },
+  {
+    id: '2',
+    title: 'Sapiens: A Brief History',
+    author: 'Yuval Noah Harari',
+    price: 8.49,
+    originalPrice: 22.99,
+    condition: 'Good',
+    genre: 'Non-Fiction',
+    cover: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300&h=450&fit=crop',
+    year: 2011,
+    description: 'A sweeping narrative of human history.',
+  },
+  {
+    id: '3',
+    title: 'The Name of the Rose',
+    author: 'Umberto Eco',
+    price: 5.49,
+    originalPrice: 14.99,
+    condition: 'Acceptable',
+    genre: 'Mystery',
+    cover: 'https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=300&h=450&fit=crop',
+    year: 1980,
+    description: 'A medieval mystery in an Italian monastery.',
+  },
+  {
+    id: '4',
+    title: 'A Brief History of Time',
+    author: 'Stephen Hawking',
+    price: 7.99,
+    originalPrice: 18.99,
+    condition: 'Like New',
+    genre: 'Science',
+    cover: 'https://images.unsplash.com/photo-1532012197267-da84d127e765?w=300&h=450&fit=crop',
+    year: 1988,
+    description: 'Exploring the universe from the Big Bang to black holes.',
+  },
+  {
+    id: '5',
+    title: 'Meditations',
+    author: 'Marcus Aurelius',
+    price: 4.99,
+    originalPrice: 12.99,
+    condition: 'Good',
+    genre: 'Philosophy',
+    cover: 'https://images.unsplash.com/photo-1476275466078-4007374efbbe?w=300&h=450&fit=crop',
+    year: 180,
+    description: 'Stoic philosophy from a Roman Emperor.',
+  },
+  {
+    id: '6',
+    title: 'The Hobbit',
+    author: 'J.R.R. Tolkien',
+    price: 5.99,
+    originalPrice: 15.99,
+    condition: 'Very Good',
+    genre: 'Fantasy',
+    cover: 'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=300&h=450&fit=crop',
+    year: 1937,
+    description: 'An unexpected journey through Middle-earth.',
+  },
+  {
+    id: '7',
+    title: 'Leaves of Grass',
+    author: 'Walt Whitman',
+    price: 3.99,
+    originalPrice: 11.99,
+    condition: 'Acceptable',
+    genre: 'Poetry',
+    cover: 'https://images.unsplash.com/photo-1524578271613-d550eacf6090?w=300&h=450&fit=crop',
+    year: 1855,
+    description: 'A landmark collection of American poetry.',
+  },
+  {
+    id: '8',
+    title: 'The Great Gatsby',
+    author: 'F. Scott Fitzgerald',
+    price: 4.49,
+    originalPrice: 13.99,
+    condition: 'Good',
+    genre: 'Fiction',
+    cover: 'https://images.unsplash.com/photo-1589998059171-988d887df646?w=300&h=450&fit=crop',
+    year: 1925,
+    description: 'Jazz Age decadence and the American dream.',
+  },
+  {
+    id: '9',
+    title: 'Guns, Germs, and Steel',
+    author: 'Jared Diamond',
+    price: 7.49,
+    originalPrice: 19.99,
+    condition: 'Very Good',
+    genre: 'History',
+    cover: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=300&h=450&fit=crop',
+    year: 1997,
+    description: 'Why did history unfold differently on different continents?',
+  },
+  {
+    id: '10',
+    title: 'Dune',
+    author: 'Frank Herbert',
+    price: 6.49,
+    originalPrice: 17.99,
+    condition: 'Like New',
+    genre: 'Fantasy',
+    cover: 'https://images.unsplash.com/photo-1518744386442-2d48ac2a3a5a?w=300&h=450&fit=crop',
+    year: 1965,
+    description: 'An epic saga of politics, religion, and ecology.',
+  },
+  {
+    id: '11',
+    title: 'The Selfish Gene',
+    author: 'Richard Dawkins',
+    price: 6.99,
+    originalPrice: 16.99,
+    condition: 'Good',
+    genre: 'Science',
+    cover: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=300&h=450&fit=crop',
+    year: 1976,
+    description: 'A gene-centered view of evolution.',
+  },
+  {
+    id: '12',
+    title: 'And Then There Were None',
+    author: 'Agatha Christie',
+    price: 4.99,
+    originalPrice: 12.99,
+    condition: 'Very Good',
+    genre: 'Mystery',
+    cover: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300&h=450&fit=crop',
+    year: 1939,
+    description: 'Ten strangers, an isolated island, and a deadly secret.',
+  },
+];
