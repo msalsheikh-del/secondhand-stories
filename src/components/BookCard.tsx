@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { Book } from '@/lib/books-data';
 import { useCart } from '@/context/CartContext';
 import { ShoppingCart } from 'lucide-react';
