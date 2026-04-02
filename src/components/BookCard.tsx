@@ -23,7 +23,7 @@ export const BookCard = ({ book, index }: { book: Book; index: number }) => {
       transition={{ duration: 0.4, delay: index * 0.05 }}
       className="group flex flex-col overflow-hidden rounded-lg border border-border bg-card shadow-book transition-shadow hover:shadow-book-hover"
     >
-      <div className="relative aspect-[2/3] overflow-hidden bg-muted">
+      <Link to={`/book/${book.id}`} className="relative aspect-[2/3] overflow-hidden bg-muted">
         <img
           src={book.cover}
           alt={book.title}
@@ -36,7 +36,7 @@ export const BookCard = ({ book, index }: { book: Book; index: number }) => {
         <span className="absolute right-2 top-2 rounded-md bg-destructive px-2 py-0.5 text-xs font-bold text-destructive-foreground">
           -{discount}%
         </span>
-      </div>
+      </Link>
 
       <div className="flex flex-1 flex-col p-4">
         <span className="font-body text-xs font-medium uppercase tracking-wider text-muted-foreground">
