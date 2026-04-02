@@ -42,9 +42,9 @@ export const BookCard = ({ book, index }: { book: Book; index: number }) => {
         <span className="font-body text-xs font-medium uppercase tracking-wider text-muted-foreground">
           {book.genre}
         </span>
-        <h3 className="mt-1 font-display text-base font-semibold leading-snug text-foreground line-clamp-2">
+        <Link to={`/book/${book.id}`} className="mt-1 font-display text-base font-semibold leading-snug text-foreground line-clamp-2 hover:text-primary transition-colors">
           {book.title}
-        </h3>
+        </Link>
         <p className="mt-0.5 font-body text-sm text-muted-foreground">
           {book.author}
         </p>
