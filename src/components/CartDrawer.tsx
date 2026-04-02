@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 export const CartDrawer = ({ open, onClose }: { open: boolean; onClose: () => void }) => {
   const { items, removeFromCart, updateQuantity, totalPrice, clearCart } = useCart();
+  const navigate = useNavigate();
 
   return (
     <AnimatePresence>
